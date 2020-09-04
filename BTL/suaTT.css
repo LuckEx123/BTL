@@ -1,0 +1,44 @@
+﻿.table-header {
+    margin: 20px 0;
+    padding: 0 15px;
+    overflow: auto;
+}
+
+    .table-header h2 {
+        float: left;
+    }
+
+#add {
+    float: right;
+}
+
+
+
+.edit-form {
+    margin: auto;
+    background-color: #fff;
+    padding: 15px;
+    width: 50%;
+    border-radius: 2%;
+}
+
+    .edit-form input[type=text] {
+        width: 100%;
+        margin: 15px 0;
+        padding: 12px;
+        border: 1px solid #e6e4e3;
+        background-color: #f7f6f2;
+    }
+
+.buttons * {
+    width: 70px;
+    text-align: center;
+    padding: 7px;
+    margin-right: 10px;
+}
+
+@media screen and (max-height: 400px) {
+    .add-container {
+        align-items: flex-start;
+    }
+}
