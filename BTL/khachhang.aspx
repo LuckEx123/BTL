@@ -15,6 +15,7 @@
                     <label><b>Mã Khách Hàng</b></label>
                     <%--<input type='text' placeholder='Nhập mã khách hàng' id="txtMaKhach">--%>
                     <asp:TextBox ID="txtMaKhach" runat="server" placeholder='Nhập mã khách hàng'></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="maKHRequire" runat="server" ErrorMessage="Mã khách hàng không được để trống" ValidateRequestMode="Enabled" ControlToValidate="txtMaKhach" ForeColor="Red"></asp:RequiredFieldValidator>
                     <label><b>Tên Khách Hàng</b></label>
                     <%--<input type='text' placeholder='Nhập tên khách hàng'id="txtTenKhach">--%>
                     <asp:TextBox ID="txtTenKhach" runat="server" placeholder='Nhập tên khách hàng'></asp:TextBox>

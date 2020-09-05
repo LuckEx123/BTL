@@ -38,6 +38,9 @@
         padding: 12px;
         border: 1px solid #e6e4e3;
     }
+    .add-form label{
+        width:100%;
+    }
 
 .buttons button {
     width: 70px;
