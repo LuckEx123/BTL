@@ -21,7 +21,7 @@
     <nav class='nav'>
         <div class="profile">
             <img src="https://cdn.iconscout.com/icon/free/png-512/avatar-370-456322.png">
-            <label>Welcome</label>
+            <asp:Label ID="lb" runat="server" Text="" CssClass=".label"></asp:Label>
         </div>
         <ul class='nav-list'>
             <li><a href="#">Trang chủ</a></li>
@@ -32,16 +32,17 @@
         </ul>
     </nav>
 
-    <div class='main-content'>
+    <form class='main-content' runat="server">
         <div class='header'>
             <button type="button" id="sidebarCollapse" class="btn btn-info" onclick="collapse()">
                 <i class="fas fa-align-left"></i>
                 <span>Toggle Sidebar</span>
             </button>
+            <asp:LinkButton ID="log" runat="server" CssClass="log" OnClick="log_Click" >Đăng nhập/Đăng xuất</asp:LinkButton>
         </div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
-    </div>
+    </form>
 </body>
-        <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
+<asp:ContentPlaceHolder ID="head" runat="server">
+</asp:ContentPlaceHolder>
 </html>
