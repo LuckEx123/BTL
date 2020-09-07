@@ -16,13 +16,20 @@ namespace BTL
         DataTable tblKH;
         protected void Page_Load(object sender, EventArgs e)
         {
-            Functions.Connect();
-            sql = "SELECT * from tblKhach";
-            tblKH = Functions.GetDataToTable(sql);
-            khachhang.DataSource = tblKH;
-            khachhang.DataBind();
-            khachhang.UseAccessibleHeader = true;
-            khachhang.HeaderRow.TableSection = TableRowSection.TableHeader;
+            if (Session["DangNhap"] != null)
+            {
+                Functions.Connect();
+                sql = "SELECT * from tblKhach";
+                tblKH = Functions.GetDataToTable(sql);
+                khachhang.DataSource = tblKH;
+                khachhang.DataBind();
+                khachhang.UseAccessibleHeader = true;
+                khachhang.HeaderRow.TableSection = TableRowSection.TableHeader;
+            }
+            else
+            {
+                Response.Redirect("DangNhap.aspx");
+            }
         }
 
         protected void them_Click(object sender, EventArgs e)

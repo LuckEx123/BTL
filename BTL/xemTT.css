@@ -34,7 +34,7 @@
 
     .add-form input[type=text] {
         width: 100%;
-        margin: 15px 0;
+        margin: 15px 0 0 0;
         padding: 12px;
         border: 1px solid #e6e4e3;
     }

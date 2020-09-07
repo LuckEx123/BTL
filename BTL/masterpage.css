@@ -36,7 +36,7 @@ body {
         width: 50%;
     }
 
-    .profile label {
+    .profile .label {
         margin: 10px;
     }
 
@@ -74,6 +74,9 @@ body {
     }
 
 .header {
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
     background-color: #fff;
     width: 100%;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
@@ -83,3 +86,7 @@ body {
     margin: 15px;
 }
 
+.log {
+    margin-left: auto;
+    margin-right: 15px;
+}
