@@ -15,13 +15,20 @@ namespace BTL
         DataTable tblSP;
         protected void Page_Load(object sender, EventArgs e)
         {
-            Functions.Connect();
-            sql = "SELECT * from tblSanPham";
-            tblSP = Functions.GetDataToTable(sql);
-            qlSanPham.DataSource = tblSP;
-            qlSanPham.DataBind();
-            qlSanPham.UseAccessibleHeader = true;
-            qlSanPham.HeaderRow.TableSection = TableRowSection.TableHeader;
+            if (Session["DangNhap"] != null)
+            {
+                Functions.Connect();
+                sql = "SELECT * from tblSanPham";
+                tblSP = Functions.GetDataToTable(sql);
+                qlSanPham.DataSource = tblSP;
+                qlSanPham.DataBind();
+                qlSanPham.UseAccessibleHeader = true;
+                qlSanPham.HeaderRow.TableSection = TableRowSection.TableHeader;
+            }
+            else
+            {
+                Response.Redirect("DangNhap.aspx");
+            }
         }
 
         protected void them_Click(object sender, EventArgs e)
@@ -31,7 +38,7 @@ namespace BTL
             //{
             //    Response.Write("<script>alert('Mã khách hàng đã tồn tại');</script>");
             //}
-            sql = "INSERT INTO tblSanPham Values (N'" + txtMaSP.Text.Trim() + "',N'" + txtTenSP.Text.Trim() + "',N'" + txtSoLuong.Text + "',N'" + txtDonGiaNhap.Text + "',N'" + txtDonGiaBan.Text + "','"+""+ "','" + "" + "')";
+            sql = "INSERT INTO tblSanPham Values (N'" + txtMaSP.Text.Trim() + "',N'" + txtTenSP.Text.Trim() + "',N'" + float.Parse(txtSoLuong.Text) + "',N'" + float.Parse(txtDonGiaNhap.Text) + "',N'" + float.Parse(txtDonGiaBan.Text) + "','"+""+ "','" + "" + "')";
             Functions.RunSQL(sql);
             Response.Redirect("sanpham.aspx");
         }

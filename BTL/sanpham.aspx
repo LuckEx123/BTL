@@ -5,7 +5,6 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <form runat="server">
         <div class='table-header'>
             <h2>Quản Lý Sản Phẩm </h2>
             <button type="button" id="add" class="btn btn-info" onclick="addU()">Thêm Sản Phẩm</button>
@@ -57,5 +56,4 @@
                 </Columns>
             </asp:GridView>
         </div>
-    </form>
 </asp:Content>

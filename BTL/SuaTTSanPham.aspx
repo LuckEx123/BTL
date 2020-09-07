@@ -6,7 +6,6 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <form runat="server">
         <div class='table-header'>
             <h2>Sửa thông tin Sản Phẩm </h2>
             <button type="button" id="add" class="btn btn-info" onclick='enableEdit()'>Sửa Sản Phẩm</button>
@@ -29,5 +28,4 @@
                 <button type='button' class='btn btn-danger' onclick='disableEdit()'>Hủy</button>
             </div>
         </div>
-    </form>
 </asp:Content>

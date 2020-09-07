@@ -30,8 +30,8 @@ namespace BTL
         protected void luu_Click(object sender, EventArgs e)
         {
             sql = "UPDATE tblSanPham SET TenSP=N'" + tenSP.Text + "',SoLuong=N'" +
-                soLuong.Text + "',DonGiaNhap='" + donGiaNhap.Text +
-                "',DonGiaBan='" + donGiaBan.Text +"' WHERE MaSP=N'" + maSP.Text + "'";
+                 float.Parse(soLuong.Text) + "',DonGiaNhap='" + float.Parse(donGiaNhap.Text) +
+                "',DonGiaBan='" + float.Parse(donGiaBan.Text) +"' WHERE MaSP=N'" + maSP.Text + "'";
             Functions.RunSQL(sql);
             Response.Redirect("sanpham.aspx");
         }

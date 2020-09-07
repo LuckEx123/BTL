@@ -17,6 +17,8 @@ namespace BTL
             DataTable tblSP;
             protected void Page_Load(object sender, EventArgs e)
             {
+            if (Session["DangNhap"] != null)
+            {
                 Functions.Connect();
                 sql = "SELECT * from tblNhanVien";
                 tblSP = Functions.GetDataToTable(sql);
@@ -24,6 +26,11 @@ namespace BTL
                 qlnhanvien.DataBind();
                 qlnhanvien.UseAccessibleHeader = true;
                 qlnhanvien.HeaderRow.TableSection = TableRowSection.TableHeader;
+            }
+            else
+            {
+                Response.Redirect("DangNhap.aspx");
+            }
             }
 
             protected void them_Click(object sender, EventArgs e)
