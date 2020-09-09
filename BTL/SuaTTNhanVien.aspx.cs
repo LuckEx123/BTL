@@ -23,7 +23,8 @@ namespace BTL
                 tenNV.Text = kh.Rows[0][1].ToString();
                 diachi.Text = kh.Rows[0][3].ToString();
                 sdt.Text = kh.Rows[0][4].ToString();
-                ngaysinh.Text = kh.Rows[0][5].ToString();
+                DateTime dt = DateTime.Parse(kh.Rows[0][5].ToString());
+                ngaysinh.Text = dt.ToString("yyyy-MM-dd");
                 if (kh.Rows[0][2].ToString() == "Nam")
                 {
                     gt.Items.FindByValue("Nam").Selected = true;

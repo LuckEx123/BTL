@@ -31,7 +31,7 @@
                     <asp:TextBox ID="mtbDienThoai" runat="server" placeholder='Nhập số điện thoại'></asp:TextBox>
                       <label><b>Ngay Sinh</b></label>
                     <%--<input type='text' placeholder='Nhập ngày sinh'id="ngaysinh">--%>
-                    <asp:TextBox ID="ngaysinh"  runat="server" placeholder='Nhập ngày sinh' DataFormatString="{0:dd/MMM/yyyy}" SortExpression="Date"/></asp:TextBox>
+                    <asp:TextBox ID="ngaysinh"  runat="server" placeholder='Nhập ngày sinh' TextMode="Date" /></asp:TextBox>
                     <div class='buttons'>
                         <%--<button type='submit' class='btn btn-info' id="them">Thêm</button>--%>
                         <asp:Button ID="them" runat="server" Text="Thêm" class='btn btn-info' OnClick="them_Click"/>

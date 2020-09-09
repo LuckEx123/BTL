@@ -28,7 +28,7 @@
             <label><b>Số điện thoại</b></label>
             <asp:TextBox ID="sdt" runat="server"></asp:TextBox>
             <label><b>Ngày Sinh</b></label>
-            <asp:TextBox ID="ngaysinh" runat="server"></asp:TextBox>
+            <asp:TextBox ID="ngaysinh" runat="server" TextMode="Date"  ></asp:TextBox>
             <div class='buttons'>
                 <asp:Button ID="luu" runat="server" Text="Lưu" class="btn btn-info" OnClick="luu_Click" />
                 <button type='button' class='btn btn-danger' onclick='disableEdit()'>Hủy</button>

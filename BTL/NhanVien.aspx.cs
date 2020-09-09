@@ -40,7 +40,8 @@ namespace BTL
             //{
             //    Response.Write("<script>alert('Mã khách hàng đã tồn tại');</script>");
             //}
-            DateTime ngaysinh1 = DateTime.ParseExact(ngaysinh.Text, "dd/MM/yyyy", null);
+            DateTime ngaysinh1 = DateTime.Parse(ngaysinh.Text);
+           
             string gioitinh= gt.SelectedValue;
             sql = "INSERT INTO tblNhanVien Values (N'" + txtMaNhanVien.Text.Trim() + "',N'" + txtTenNV.Text.Trim() + "',N'" + gioitinh + "',N'" + txtDiaChi.Text + "',N'" + mtbDienThoai.Text + "',N'" + ngaysinh1 + "')";
                 Functions.RunSQL(sql);
