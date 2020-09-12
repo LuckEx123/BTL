@@ -1,6 +1,10 @@
 ﻿function addU() {
-    modal = document.getElementsByClassName('add-container')[0];
+    var modal = document.getElementsByClassName('add-container')[0];
     modal.style.display = 'flex';
+    var x = document.getElementsByClassName('add-form')[0];
+    if (x.offsetHeight >= window.innerHeight) {
+        modal.style.alignItems = 'flex-start';
+    }
 }
 
 window.onclick = function () {

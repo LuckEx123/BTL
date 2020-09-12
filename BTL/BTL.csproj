@@ -141,6 +141,7 @@
     <Content Include="suaTT.js" />
     <Content Include="SuaTTNhanVien.aspx" />
     <Content Include="SuaTTSanPham.aspx" />
+    <Content Include="home.aspx" />
     <Content Include="xemTT.css" />
     <Content Include="khachhang.aspx" />
     <Content Include="xemTT.js" />
@@ -301,6 +302,13 @@
     </Compile>
     <Compile Include="suaTTKhachHang.aspx.designer.cs">
       <DependentUpon>suaTTKhachHang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

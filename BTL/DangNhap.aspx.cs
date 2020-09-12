@@ -27,7 +27,7 @@ namespace BTL
                     if (Functions.CheckKey(sql))
                     {
                         Session["DangNhap"] = uName.Text;
-                        Response.Redirect("khachhang.aspx");
+                        Response.Redirect("home.aspx");
                     }
                 }
             }
@@ -51,7 +51,7 @@ namespace BTL
                     Response.Cookies["DangNhap"].Expires = DateTime.Now.AddDays(+1);
                 }
                 Session["DangNhap"] = uName.Text;
-                Response.Redirect("khachhang.aspx");
+                Response.Redirect("home.aspx");
             }
             else
             {
