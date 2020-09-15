@@ -38,7 +38,7 @@ namespace BTL
             //{
             //    Response.Write("<script>alert('Mã khách hàng đã tồn tại');</script>");
             //}
-            sql = "INSERT INTO tblSanPham Values (N'" + txtMaSP.Text.Trim() + "',N'" + txtTenSP.Text.Trim() + "',N'" + float.Parse(txtSoLuong.Text) + "',N'" + float.Parse(txtDonGiaNhap.Text) + "',N'" + float.Parse(txtDonGiaBan.Text) + "','"+""+ "','" + "" + "')";
+            sql = "INSERT INTO tblSanPham Values (N'" + txtMaSP.Text.Trim() + "',N'" + txtTenSP.Text.Trim() + "',N'" + float.Parse(txtSoLuong.Text) + "',N'" + float.Parse(txtDonGiaNhap.Text) + "',N'" + float.Parse(txtDonGiaBan.Text)+ "')";
             Functions.RunSQL(sql);
             Response.Redirect("sanpham.aspx");
         }

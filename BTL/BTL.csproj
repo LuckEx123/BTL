@@ -142,6 +142,7 @@
     <Content Include="SuaTTNhanVien.aspx" />
     <Content Include="SuaTTSanPham.aspx" />
     <Content Include="home.aspx" />
+    <Content Include="QLHD.aspx" />
     <Content Include="xemTT.css" />
     <Content Include="khachhang.aspx" />
     <Content Include="xemTT.js" />
@@ -309,6 +310,13 @@
     </Compile>
     <Compile Include="home.aspx.designer.cs">
       <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QLHD.aspx.cs">
+      <DependentUpon>QLHD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QLHD.aspx.designer.cs">
+      <DependentUpon>QLHD.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

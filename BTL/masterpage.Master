@@ -28,7 +28,7 @@
             <li><a href="khachhang.aspx">Quản lí khách hàng</a></li>
             <li><a href="NhanVien.aspx">Quản lí nhân viên</a></li>
             <li><a href="sanpham.aspx">Quản lí sản phẩm</a></li>
-            <li><a href="#">Quản lí hóa đơn</a></li>
+            <li><a href="QLHD.aspx">Quản lí hóa đơn</a></li>
         </ul>
     </nav>
 
